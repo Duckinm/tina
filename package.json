@@ -7,8 +7,21 @@
     "build": "yarn tinacms server:start -c \"yarn build:app\"",
     "export": "yarn build && next export",
     "start": "next start",
-    "type-check": "tsc",
-    "lint": "next lint"
+    "lint": "next lint && eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
+    "prepare": "husky install"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "printWidth": 160,
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ]
   },
   "dependencies": {
     "@tinacms/cli": "^0.55.2",
@@ -29,16 +42,10 @@
     "eslint-config-next": "11.1.2",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.2",
+    "lint-staged": "^11.2.0",
     "postcss": "^8.3.9",
     "prettier": "^2.4.1",
     "pretty-quick": "^3.1.1",
     "typescript": "^4.4.3"
-  },
-  "prettier": {
-    "semi": false,
-    "printWidth": 160,
-    "trailingComma": "es5",
-    "tabWidth": 2,
-    "singleQuote": true
   }
 }
