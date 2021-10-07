@@ -19,7 +19,7 @@ const TinaCMS = dynamic(() => import('tinacms'), { ssr: false })
 const App = ({ Component, pageProps }: AppPropsWithLayout) => {
   const getLayout = Component.getLayout ?? ((page) => page)
 
-  return getLayout(
+  return (
     <>
       <TinaEditProvider
         editMode={
@@ -30,11 +30,14 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
             isLocalClient={Boolean(Number(IS_LOCAL_CLIENT ?? true))}
             {...pageProps}
           >
-            {(livePageProps: any) => <Component {...livePageProps} />}
+            {(livePageProps: any) =>
+              getLayout(<Component {...livePageProps} />)
+            }
           </TinaCMS>
         }
       >
-        <Component {...pageProps} />
+        getLayout(
+        <Component {...pageProps} />)
       </TinaEditProvider>
     </>
   )
