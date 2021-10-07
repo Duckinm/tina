@@ -1581,15 +1581,15 @@
     lodash.merge "^4.6.2"
     lodash.uniq "^4.5.0"
 
-"@tinacms/cli@^0.55.2":
-  version "0.55.2"
-  resolved "https://registry.yarnpkg.com/@tinacms/cli/-/cli-0.55.2.tgz#c3688311f668351e0e94837df82f944cc545ca99"
-  integrity sha512-+2DUilCpSTQoAk7U6/VEGegnXSNm98QBx2HhfE+k4xOuVarqxAv1r4fEJA8WAHMy+2Szmd63fdGhWMFoRaZvwQ==
+"@tinacms/cli@^0.56.0":
+  version "0.56.0"
+  resolved "https://registry.yarnpkg.com/@tinacms/cli/-/cli-0.56.0.tgz#2d5b0628ab956ff70f67083eeeffbf6a03ec86cd"
+  integrity sha512-9ZDxTGjNdJT/AKe8jm98Cyxlsbpni/aEYp5GKNBL/up7XJZP+ACKDtJ3ZfCcB/jGLPA6JcFml2juNhebX4cssQ==
   dependencies:
     "@graphql-codegen/core" "^1.17.0"
     "@graphql-codegen/typescript" "^1.17.0"
     "@graphql-codegen/typescript-operations" "^1.17.0"
-    "@tinacms/graphql" "0.54.3"
+    "@tinacms/graphql" "0.55.0"
     ajv "^6.12.3"
     altair-express-middleware "4.0.6"
     axios "0.19.0"
@@ -1614,10 +1614,10 @@
     typescript "^4.3.5"
     yup "^0.32.9"
 
-"@tinacms/graphql@0.54.3":
-  version "0.54.3"
-  resolved "https://registry.yarnpkg.com/@tinacms/graphql/-/graphql-0.54.3.tgz#6d735fe6a57d69e63b29e8a501cc56ca6f31e3e3"
-  integrity sha512-131JgETQd4nypPQ9RJi96HuXwRbtnO6lWsZLyS0muHD4b7sqhnEOG6kdZVBa/yJQTWbMDGLYvcWHsRoz2L6VPQ==
+"@tinacms/graphql@0.55.0":
+  version "0.55.0"
+  resolved "https://registry.yarnpkg.com/@tinacms/graphql/-/graphql-0.55.0.tgz#488020a72f439eda2bed3a0db66b2deea77ef219"
+  integrity sha512-s+4mlB1yC+sj80wEYOlmfoFEqcJyY5sg2ztl1xad9Q85ns3WRBoWPAAJmUjZSjVjVDRKvZUiQdAKeJaYaUNicw==
   dependencies:
     "@octokit/auth-app" "^2.6.0"
     "@octokit/graphql" "^4.5.6"
@@ -1653,10 +1653,10 @@
     ws "^7.3.1"
     yup "^0.32.9"
 
-"@tinacms/toolkit@0.53.0":
-  version "0.53.0"
-  resolved "https://registry.yarnpkg.com/@tinacms/toolkit/-/toolkit-0.53.0.tgz#2dbea38030d8e7163854ffa57f6a4c005c3f54b6"
-  integrity sha512-uZuRrzfZpuJ7kepFUA77wp9f40rKQJzXwQPcni16tXRDm83Sq7bCeY9nOn7lm4VtNN8Uz26Nfq0MUz6FvhJQdg==
+"@tinacms/toolkit@0.54.0":
+  version "0.54.0"
+  resolved "https://registry.yarnpkg.com/@tinacms/toolkit/-/toolkit-0.54.0.tgz#8faa904f35170cb370b7bc166bcbfa92bc532255"
+  integrity sha512-z/HqcF+l6luK9j4cfT078CnFRRkvQoF74HhwMX6nEuBVLNa11gzsbuw6d/Iz2Dc0+ycVAYDOQBHDAfwgVKHexg==
   dependencies:
     "@sambego/storybook-styles" "^1.0.0"
     "@types/atob" "^2.1.2"
@@ -1678,7 +1678,6 @@
     react-beautiful-dnd "^11.0.5"
     react-color "^2.17.3"
     react-datetime "^2.16.3"
-    react-dismissible "^1.3.0"
     react-dropzone "10.1.8"
     react-final-form "^6.3.0"
     simple-git "1.126.0"
@@ -9298,11 +9297,6 @@ react-datetime@^2.16.3:
     prop-types "^15.5.7"
     react-onclickoutside "^6.5.0"
 
-react-dismissible@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/react-dismissible/-/react-dismissible-1.3.0.tgz#d48bffe99b64d444f91ccc2fa428794dfbcf6530"
-  integrity sha512-KqShOnw84Ft2Hx/O5KrwTDY1bXmICcJ8HlRIqSdn6j4Lg3OLVrETBiPgGUB4CRNRquVihcd5JmgDa0WUVdBG9g==
-
 react-dom@17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
@@ -10939,15 +10933,15 @@ timsort@^0.3.0:
   resolved "https://registry.yarnpkg.com/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
   integrity sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
 
-tinacms@^0.55.2:
-  version "0.55.2"
-  resolved "https://registry.yarnpkg.com/tinacms/-/tinacms-0.55.2.tgz#9bd9965a719529da7969ae66465df585b067617f"
-  integrity sha512-Ld3owhjAubOjBTuRGrQLNMJDirQ/VU02T0VwL1jcQWcJrJQpLsXJZHVNgrWQDW76as3efWymZulQmtmXYu8zWQ==
+tinacms@^0.56.0:
+  version "0.56.0"
+  resolved "https://registry.yarnpkg.com/tinacms/-/tinacms-0.56.0.tgz#0656404cdfd8fd571ec7ddd2ad10789130722e7b"
+  integrity sha512-/+oVn45hFYPi9FTa40Ax+Mmhu8XT5cPN/n1zcANyfOQ8kR2wsFUi167d9ROhp7kdlEksKjF5wezzH4BlRX6/Xw==
   dependencies:
     "@graphql-codegen/core" "^1.15.4"
     "@graphql-codegen/typescript" "^1.15.4"
     "@graphql-codegen/typescript-operations" "^1.15.4"
-    "@tinacms/toolkit" "0.53.0"
+    "@tinacms/toolkit" "0.54.0"
     "@xstate/react" "^1.1.0"
     codemirror "^5.55.0"
     cors "^2.8.5"
